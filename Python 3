@@ -1,0 +1,35 @@
+# exo 1 creer deux fonctions de conversion de température : °C -> F et F-°C
+
+def affichage_menu():
+    global convertion
+    print("Conversion de température")
+    print("---------==MENU==---------")
+    print("1 - Conversion de Celsius en Fahrenheit")
+    print("2 - Conversion de Fahrenheit en Celsius")
+    print("0 - Quitter")
+    convertion=int(input("/nChoisissez :"))
+    return convertion
+
+def cCelToFah(celsius):
+    fahrenheit= 9./5.*celsius+32
+    return fahrenheit
+def cFahToCel(fahrenheit):
+    celsius= 5./9.*(fahrenheit-32)
+    return celsius
+
+affichage_menu()
+
+while convertion!=0:
+    vSaisiTemperature = float(input("Saisissez la température à convertir : "))
+    if convertion==1:
+        sortiTemperature=cCelToFah(vSaisiTemperature)
+        print(vSaisiTemperature, "°C valent", sortiTemperature, "°F/n")
+        affichage_menu()
+    elif convertion==2:
+        sortiTemperature=cFahToCel(vSaisiTemperature)
+        print(vSaisiTemperature, "°F valent", sortiTemperature, "°C/n")
+    elif convertion==0:
+        exit()
+    else:
+        print("Tu t'es trompé dans ta commande frère")
+        affichage_menu()
