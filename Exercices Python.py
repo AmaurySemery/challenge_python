@@ -122,3 +122,36 @@ multiplication(p, max=10)
 
 # Exercice 13 : Ecrire un programme en langage Python qui demande à l’utilisateur de saisir deux nombres entiers a et b et de lui afficher le quotient et le reste de la division euclidienne de a par b.
 
+print("On va maintenant saisir deux entiers.")
+print("Nous afficherons le quotient et le reste de leur division euclidienne.")
+dividende = int(input("Donne moi un premier chiffre (dividende) : "))
+diviseur = int(input("Donne moi le deuxième chiffre (diviseur) : "))
+
+quotient = dividende // diviseur
+reste = dividende % diviseur
+
+print("Le quotient entre", dividende, "et", diviseur, "est", quotient)
+print("Quant au reste entre les deux nombres susmentionnés, le résultat est de", reste)
+
+# Exercice 14 : Ecrire un programme en langage Python qui demande à l’utilisateur de saisir un nombre entier n et de lui afficher si ce nombre est carré parfait ou non.
+
+print("Nous allons voir si le nombre sélectionné est un carré parfait ou non.")
+q = int(input("Saisissez un nombre entier : "))
+    
+def car_parfait(q):
+    rep = 0
+    if q >= 0:
+        while rep*rep < q:
+            rep = rep + 1
+
+        if rep*rep != q:
+            print(q, "n'est pas un carré parfait.")
+            return None
+        else:
+            print(q, "est un carré parfait.")
+            return rep
+    else:
+        print(q, "n'est pas un nombre positif.")
+        return None
+    
+car_parfait(q)
