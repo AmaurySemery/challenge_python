@@ -216,3 +216,13 @@ for x in l:
     
 # Exercice 20 : Ecrire un programme en langage Python, permettant d’échanger le premier et le dernier caractère d’une chaine donnée.
 
+input("Choisissez un mot : ")
+input("Choisissez en un se
+
+
+
+>>> animaux = "girafe tigre"
+>>> animaux.replace("tigre", "singe")
+'girafe singe'
+>>> animaux.replace("i", "o")
+'gorafe togre'
