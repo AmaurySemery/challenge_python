@@ -155,3 +155,18 @@ def car_parfait(q):
         return None
     
 car_parfait(q)
+
+# Exercice 15 : Ecrire un programme en langage Python qui demande à l’utilisateur de saisir un nombre entier n et de lui afficher si ce nombre est premier ou non.
+
+print("Nous allons vérifier si le nombre suivant est premier ou non.")
+r = int(input("Saisis un nombre entier : "))
+
+def nbr_premier(r):
+i = 2
+while i < r and r % i != 0 :
+    i = i + 1
+if i == r :
+    print('Le nombre', nombre, 'est premier ! Fantastique !')
+else :
+    print('Ce n\'est pas un nombre premier.')
+    
