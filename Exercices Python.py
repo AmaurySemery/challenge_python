@@ -103,3 +103,22 @@ def getFactors(n):
 
 print ("Voici la liste des diviseurs de", o, ":", getFactors(o))
 
+# Exercice 12 : 1) – Ecrire un programme en Python qui demande à l’utilisateur de saisir un nombre entier n et de lui afficher la table de multiplication de ce nombre.
+# 2) – Améliorez le programme afin qu’il affiche les tables de multiplications de tous les nombres compris entre 1 et 9
+
+p = int(input("Donne moi un nouveau nombre entier compris entre 1 et 9 : "))
+
+def multiplication(p, max=10):
+    if int(p) > 0 and int(p) <= 9:
+        print("Je t'affiche la table de multiplication du nombre", p, ":")
+        for i in range(1, max + 1):
+            print(p * i, end=" ")
+            print()
+    else:
+        print("Le nombre que tu as choisis ne respecte pas les conditions de base. Navré.")
+        print("Si tu veux réitérer l'essai, lis bien l'énoncé cette fois :)")
+
+multiplication(p, max=10)
+
+# Exercice 13 : Ecrire un programme en langage Python qui demande à l’utilisateur de saisir deux nombres entiers a et b et de lui afficher le quotient et le reste de la division euclidienne de a par b.
+
