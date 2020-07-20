@@ -198,3 +198,15 @@ for (key, value) in occurrences.items():
 
 # Exercice 18 : Ecrire un programme en Python qui demande à l’utilisateur de saisir une chaine de caractère s et de lui renvoyer un message indiquant si la chaine contient la lettre ‘a’ tout en indiquant sa position sur la chaine. Exemple si l’utilisateur tape la chaine s = ‘langage’ le programme lui renvoie : La lettre ‘a’ se trouve à la position : 1 La lettre ‘a’ se trouve à la position : 4
 
+s = input("Tapez votre chaîne de caractères : ")
+t = input("Saisissez la lettre pour déterminer sa position dans la chaîne de caractères précédente : ")
+
+n = len(s)
+
+for i in range(0,n):
+
+    if(s[i] == t):
+        print("Le caractère", t, "se trouve à la position :", i , "dans ta chaîne de caractères.")
+
+# Exercice 19 : Ecrire un programme en Python qui permet de lister les chaines qui composent la liste l = [“laptop”, “iphone”, “tablet”] tout en indiquant la longueur de chaque chaine.
+
