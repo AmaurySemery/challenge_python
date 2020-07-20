@@ -161,12 +161,14 @@ car_parfait(q)
 print("Nous allons vérifier si le nombre suivant est premier ou non.")
 r = int(input("Saisis un nombre entier : "))
 
-def nbr_premier(r):
 i = 2
 while i < r and r % i != 0 :
     i = i + 1
 if i == r :
-    print('Le nombre', nombre, 'est premier ! Fantastique !')
+    print("Le nombre", r, "est premier !")
 else :
-    print('Ce n\'est pas un nombre premier.')
+    print("Le nombre", r, "n'est pas premier !")
     
+# Exercice 16 : Ecrire un programme en langage Python qui permet de parcourir et afficher les caractères d’une variable du type chaine de caractères. Exemple pour s = « Python » , le programme affiche les caractères : P y t h o n
+
+
