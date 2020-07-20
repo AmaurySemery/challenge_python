@@ -49,3 +49,5 @@ def age():
 
 age()
 
+# Exercice 7 : Ecrire un programme en Python qui demande à l’utilisateur de saisir 3 nombre x, y et z et de lui afficher leur maximum.
+
