@@ -179,4 +179,21 @@ mot = mot.upper()
 
 print("Les caractères de ton mot sont :", mot.upper())
 
-# Exercice 17 : 
+# Exercice 17 : Ecrire un programme en Python permettant d’afficher pour une chaine de caractères donnée, le nombre d’occurrences de chaque caractère dans la chaine. Exemple pour la chaine de caractère s = « Python.org » le programme doit afficher :
+# Le caractère : ” P ” figure 1 fois dans la chaine s
+# Le caractère : ” y ” figure 1 fois dans la chaine s
+# Le caractère : ” t ” figure 1 fois dans la chaine s
+# Le caractère : ” h ” figure 1 fois dans la chaine s
+# Le caractère : ” o ” figure 2 fois dans la chaine s
+# Le caractère : ” n ” figure 1 fois dans la chaine s
+# Le caractère : ” . ” figure 1 fois dans la chaine s
+# Le caractère : ” r ” figure 1 fois dans la chaine s
+# Le caractère : ” g ” figure 1 fois dans la chaine s
+
+from collections import Counter
+expression = input("Là, tu peux me donner un mot ou une phrase si t'es inspiré Jean-Paul Rimbaud : ")
+occurrences = Counter(expression)
+print("Nombre d'occurrences de tous les caractères :")
+for (key, value) in occurrences.items():
+    print ("Nombres d'occurrences de", key, "est :",value)
+
