@@ -89,3 +89,17 @@ def perimetre(rayon):
     return math.pi * diametre
     
 print("Ton cercle a une surface de", aire(rayon), "et un périmètre de", perimetre(rayon))
+
+# Exercice 11 : Ecrire un programme en Python qui demande à l’utilisateur de saisir un nombre entier n et de lui afficher tous les diviseurs de ce nombre.
+
+o = int(input("Saisis moi un nombre entier que je te donne tous ses diviseurs : "))
+
+def getFactors(n):
+    factors=[];
+    for i in range(1, n + 1):
+        if n % i == 0:
+            factors.append(i)
+    return factors
+
+print ("Voici la liste des diviseurs de", o, ":", getFactors(o))
+
