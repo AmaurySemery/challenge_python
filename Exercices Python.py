@@ -62,3 +62,11 @@ age()
 
 # Exercice 8 : Ecrire un programme en Python qui demande à l’utilisateur de saisir un nombre entier n et de lui afficher la valeur de la somme 1 + 2 + … + n =
 
+k = int(input("Tu veux bien me donner un nombre entier ? "))
+print("Merci à toi !")
+l = 0
+for i in range(1,k+1):
+    l = l + i
+print("La valeur de la somme  1 + 2 + 3 + ... + ",k,"vaut donc", l)
+
+# Exercice 9 : Ecrire un programme en Python qui demande à l’utilisateur de saisir un nombre entier n et de lui afficher n !
