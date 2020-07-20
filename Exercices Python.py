@@ -210,3 +210,9 @@ for i in range(0,n):
 
 # Exercice 19 : Ecrire un programme en Python qui permet de lister les chaines qui composent la liste l = [“laptop”, “iphone”, “tablet”] tout en indiquant la longueur de chaque chaine.
 
+l = ["laptop", "iphone", "tablet"]
+for x in l:
+    print(x, " est dans la liste. Sa taille est de", len(x))
+    
+# Exercice 20 : Ecrire un programme en langage Python, permettant d’échanger le premier et le dernier caractère d’une chaine donnée.
+
