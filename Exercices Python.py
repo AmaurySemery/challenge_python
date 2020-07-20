@@ -18,3 +18,11 @@ print("Le maximum est de", max(d,e), "! Félicitations", name, "!")
 
 # Exercice 4 : Ecrire un programme en langage Python qui affiche les 100 premiers nombres entiers
 
+def int_numbers():
+    f = input("Donne moi un nombre entier entre 1 et 100 : ")
+    if int(f) <= 100 and int(f) >= 0:
+        print("Votre nombre de", f, "fait partie des 100 premiers entiers, bravo !")
+    else:
+        print("Votre nombre ne fait pas partie des 100 premiers entiers.")
+
+int_numbers()
