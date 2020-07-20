@@ -44,10 +44,23 @@ def age():
     if g >= 18 and g < 130:
         print("Oh ! Tu es majeur", name, "! Les responsabilités, toussa...")
         print("La vie de famille peut-être !")
-    else:
+    if g > 130:
         print(g, "ans ?! Tu ne te payerais pas ma tête Nosfératu ?!")
 
 age()
 
 # Exercice 7 : Ecrire un programme en Python qui demande à l’utilisateur de saisir 3 nombre x, y et z et de lui afficher leur maximum.
+
+print("Cher", name, "On va maintenant saisir trois chiffres et définir le maximum.")
+x = int(input("Entrez le premier nombre : "))
+y = int(input("Entrez le deuxième nombre : "))
+z = int(input("Entrez le troisième nombre : "))
+def max(x,y,z):
+    if x>y and z:
+        return(x)
+    if y>x and z:
+        return(y)
+    if z>y and x:
+        return(z)
+print("Le nombre maximum est ", max(x,y,z))
 
