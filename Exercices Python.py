@@ -11,10 +11,21 @@ c = int(a) + int(b)
 print("Ce qui nous fait la modique somme de...", c, "!")
 
 # Exercice 3 : Ecrire un programme en Python qui demande à l’utilisateur de saisir deux nombres a et b et de lui afficher leur maximum.
+# &
+# Exercice 7 : Ecrire un programme en Python qui demande à l’utilisateur de saisir 3 nombre x, y et z et de lui afficher leur maximum.
 
-d = input("On va définir le maximum entre deux nombres, peux-tu me donner le premier ? ")
-e = input("Peux-tu me donner un second chiffre ? ")
-print("Le maximum est de", max(d,e), "! Félicitations", name, "!")
+print("Cher", name, "On va maintenant saisir trois chiffres et définir le maximum.")
+h = int(input("Entrez le premier nombre : "))
+i = int(input("Entrez le deuxième nombre : "))
+j = int(input("Entrez le troisième nombre : "))
+def max(h,i,j):
+    if h>i and j:
+        return(h)
+    if i>j and h:
+        return(i)
+    if j>h and i:
+        return(j)
+print("Le nombre maximum est ", max(h,i,j))
 
 # Exercice 4 : Ecrire un programme en langage Python qui affiche les 100 premiers nombres entiers
 # &
@@ -48,19 +59,4 @@ def age():
         print(g, "ans ?! Tu ne te payerais pas ma tête Nosfératu ?!")
 
 age()
-
-# Exercice 7 : Ecrire un programme en Python qui demande à l’utilisateur de saisir 3 nombre x, y et z et de lui afficher leur maximum.
-
-print("Cher", name, "On va maintenant saisir trois chiffres et définir le maximum.")
-x = int(input("Entrez le premier nombre : "))
-y = int(input("Entrez le deuxième nombre : "))
-z = int(input("Entrez le troisième nombre : "))
-def max(x,y,z):
-    if x>y and z:
-        return(x)
-    if y>x and z:
-        return(y)
-    if z>y and x:
-        return(z)
-print("Le nombre maximum est ", max(x,y,z))
 
