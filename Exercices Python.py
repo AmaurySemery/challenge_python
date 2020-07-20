@@ -175,9 +175,8 @@ else :
 # Exercice 16 : Ecrire un programme en langage Python qui permet de parcourir et afficher les caractères d’une variable du type chaine de caractères. Exemple pour s = « Python » , le programme affiche les caractères : P y t h o n
 
 mot = input("On arrête un peu avec les chiffres. Donne moi maintenant un mot : ")
-mot = mot.upper()
-
-print("Les caractères de ton mot sont :", mot.upper())
+mot = mot.capitalize()
+print("Les caractères de ton mot sont :", mot.capitalize())
 
 # Exercice 17 : Ecrire un programme en Python permettant d’afficher pour une chaine de caractères donnée, le nombre d’occurrences de chaque caractère dans la chaine. Exemple pour la chaine de caractère s = « Python.org » le programme doit afficher :
 # Le caractère : ” P ” figure 1 fois dans la chaine s
@@ -198,3 +197,4 @@ for (key, value) in occurrences.items():
     print ("Nombres d'occurrences de", key, "est :",value)
 
 # Exercice 18 : Ecrire un programme en Python qui demande à l’utilisateur de saisir une chaine de caractère s et de lui renvoyer un message indiquant si la chaine contient la lettre ‘a’ tout en indiquant sa position sur la chaine. Exemple si l’utilisateur tape la chaine s = ‘langage’ le programme lui renvoie : La lettre ‘a’ se trouve à la position : 1 La lettre ‘a’ se trouve à la position : 4
+
