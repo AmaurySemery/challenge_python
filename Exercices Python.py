@@ -14,7 +14,7 @@ print("Ce qui nous fait la modique somme de...", c, "!")
 # &
 # Exercice 7 : Ecrire un programme en Python qui demande à l’utilisateur de saisir 3 nombre x, y et z et de lui afficher leur maximum.
 
-print("Cher", name, "On va maintenant saisir trois chiffres et définir le maximum.")
+print("On va maintenant saisir trois chiffres et définir le maximum.")
 h = int(input("Entrez le premier nombre : "))
 i = int(input("Entrez le deuxième nombre : "))
 j = int(input("Entrez le troisième nombre : "))
@@ -70,3 +70,22 @@ for i in range(1,k+1):
 print("La valeur de la somme  1 + 2 + 3 + ... + ",k,"vaut donc", l)
 
 # Exercice 9 : Ecrire un programme en Python qui demande à l’utilisateur de saisir un nombre entier n et de lui afficher n !
+
+m = int(input("Bon, j'ai l'impression de radoter, mais tu veux bien me prêter un nombre entier ? Allez, n'importe lequel : "))
+print("P'tit", m, "rendu !")
+
+# Exercice 10 : Ecrire un programme en Python qui demande à l’utilisateur de saisir le rayon d’un cercle et de lui renvoyer la surface et le périmètre.
+
+rayon = int(input("Imagine un cercle, son rayon vaut combien ? "))
+from math import*
+def aire(rayon):
+    A=pi*rayon**2
+    return(A)
+
+import math    
+
+def perimetre(rayon):
+    diametre = 2 * rayon
+    return math.pi * diametre
+    
+print("Ton cercle a une surface de", aire(rayon), "et un périmètre de", perimetre(rayon))
