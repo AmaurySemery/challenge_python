@@ -19,11 +19,11 @@ h = int(input("Entrez le premier nombre : "))
 i = int(input("Entrez le deuxième nombre : "))
 j = int(input("Entrez le troisième nombre : "))
 def max(h,i,j):
-    if h>i and j:
+    if h>i and h>j:
         return(h)
-    if i>j and h:
+    if i>j and i>h:
         return(i)
-    if j>h and i:
+    if j>h and j>i:
         return(j)
 print("Le nombre maximum est", max(h,i,j), "!")
 
@@ -34,9 +34,9 @@ print("Le nombre maximum est", max(h,i,j), "!")
 def int_numbers():
     f = input("Donne moi un nombre entier entre 1 et 100 : ")
     if int(f) <= 100 and int(f) >= 0:
-        print("Votre nombre de", f, "fait partie des 100 premiers entiers, bravo !")
+        print("Le nombre", f, "fait partie des 100 premiers entiers, bravo !")
     else:
-        print("Votre nombre ne fait pas partie des 100 premiers entiers.")
+        print("Le nombre", f, "ne fait pas partie des 100 premiers entiers.")
     print("Mais attention, tu n'as encore rien vu !")
     n = int(f)
     if (n % 2) == 0:
@@ -135,6 +135,7 @@ print("Quant au reste entre les deux nombres susmentionnés, le résultat est de
 
 # Exercice 14 : Ecrire un programme en langage Python qui demande à l’utilisateur de saisir un nombre entier n et de lui afficher si ce nombre est carré parfait ou non.
 
+print("Quand on multiplie un nombre entier par lui-même, on obtient un carré parfait.")
 print("Nous allons voir si le nombre sélectionné est un carré parfait ou non.")
 q = int(input("Saisissez un nombre entier : "))
     
@@ -158,6 +159,7 @@ car_parfait(q)
 
 # Exercice 15 : Ecrire un programme en langage Python qui demande à l’utilisateur de saisir un nombre entier n et de lui afficher si ce nombre est premier ou non.
 
+print("Un nombre premier est un entier naturel qui admet exactement deux diviseurs distincts entiers et positifs.")
 print("Nous allons vérifier si le nombre suivant est premier ou non.")
 r = int(input("Saisis un nombre entier : "))
 
@@ -168,6 +170,13 @@ if i == r :
     print("Le nombre", r, "est premier !")
 else :
     print("Le nombre", r, "n'est pas premier !")
+    print("Les vingt-cinq nombres premiers inférieurs à 100 sont : 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, et 97.")
     
 # Exercice 16 : Ecrire un programme en langage Python qui permet de parcourir et afficher les caractères d’une variable du type chaine de caractères. Exemple pour s = « Python » , le programme affiche les caractères : P y t h o n
 
+mot = input("On arrête un peu avec les chiffres. Donne moi maintenant un mot : ")
+mot = mot.upper()
+
+print("Les caractères de ton mot sont :", mot.upper())
+
+# Exercice 17 : 
