@@ -25,7 +25,7 @@ def max(h,i,j):
         return(i)
     if j>h and i:
         return(j)
-print("Le nombre maximum est ", max(h,i,j))
+print("Le nombre maximum est", max(h,i,j), "!")
 
 # Exercice 4 : Ecrire un programme en langage Python qui affiche les 100 premiers nombres entiers
 # &
@@ -51,7 +51,7 @@ int_numbers()
 def age():
     g = int(input("D'ailleurs, t'as quel âge ? "))
     if g < 18:
-        print("Mais...", name, "... Tu es mineur ! La bonne époque !")
+        print("Mais...", name, "... Tu es mineur ! La belle époque !")
     if g >= 18 and g < 130:
         print("Oh ! Tu es majeur", name, "! Les responsabilités, toussa...")
         print("La vie de famille peut-être !")
