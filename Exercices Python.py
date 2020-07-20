@@ -17,6 +17,8 @@ e = input("Peux-tu me donner un second chiffre ? ")
 print("Le maximum est de", max(d,e), "! Félicitations", name, "!")
 
 # Exercice 4 : Ecrire un programme en langage Python qui affiche les 100 premiers nombres entiers
+# &
+# Exercice 5 : Ecrire un programme en langage Python qui demande à l’utilisateur de saisir son nombre entier et de lui afficher si ce nombre est pair ou impair
 
 def int_numbers():
     f = input("Donne moi un nombre entier entre 1 et 100 : ")
@@ -24,5 +26,12 @@ def int_numbers():
         print("Votre nombre de", f, "fait partie des 100 premiers entiers, bravo !")
     else:
         print("Votre nombre ne fait pas partie des 100 premiers entiers.")
+    print("Mais attention, tu n'as encore rien vu !")
+    n = int(f)
+    if (n % 2) == 0:
+        print("{0} est pair".format(n),"!!!!")
+    else:
+        print("{0} est impair".format(n),"!!!!")
 
 int_numbers()
+
