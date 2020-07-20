@@ -35,3 +35,17 @@ def int_numbers():
 
 int_numbers()
 
+# Exercice 6 : Ecrire un programme en langage Python qui demande à l’utilisateur de saisir son âge et de lui afficher le message « vous êtes Majeur ! » si l’âge tapé est supérieur ou égale à 18 et le message « vous êtes mineur ! » si l’âge tapé est inférieur à 18
+
+def age():
+    g = int(input("D'ailleurs, t'as quel âge ? "))
+    if g < 18:
+        print("Mais...", name, "... Tu es mineur ! La bonne époque !")
+    if g >= 18 and g < 130:
+        print("Oh ! Tu es majeur", name, "! Les responsabilités, toussa...")
+        print("La vie de famille peut-être !")
+    else:
+        print(g, "ans ?! Tu ne te payerais pas ma tête Nosfératu ?!")
+
+age()
+
