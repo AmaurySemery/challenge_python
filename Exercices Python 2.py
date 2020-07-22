@@ -10,3 +10,10 @@ tetes = 1 * personnes
 epaules = 2 * personnes
 genoux = 2 * personnes
 orteils = 10 * personnes
+
+# Ecrivez un programme pour inverser les valeurs de deux variables. Le correcteur va automatiquement définir les variables x et y pour vous, avec des valeurs numériques. Vous devez écrire le code qui va échanger leurs valeurs : la valeur de x après que votre code soit exécuté doit être égale à la valeur que y avait avant que votre code s'exécute, et la valeur de y après que votre code s'exécute doit être celle de x avant que votre code s'exécute. Votre programme ne doit pas générer de sortie.
+
+xOriginal = x
+x = y
+y = xOriginal
+
