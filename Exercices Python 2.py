@@ -17,3 +17,7 @@ xOriginal = x
 x = y
 y = xOriginal
 
+# Il y a une seule route entre les deux villes. La route a trois ponts avec des limites de poids a, b, c. Pour pouvoir conduire sur cette route, le camion doit d'abord passer la pont avec avec une limite de poids a, puis celui avec avec une limite de poids b, et enfin celui avec avec une limite de poids c. Votre camion aura un accident s'il dépasse l'une des trois limites. Ecrivez un programme qui affiche le poids maximum qui peut être transporté sur cette route. Votre code utilisera le fait que les variables a, b, and c contiennent déjà les valeurs des poids limites pour les ponts.
+
+print(min(a,b,c))
+
